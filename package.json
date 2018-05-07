@@ -1,8 +1,17 @@
 {
   "name": "LIRI-Bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "LIRI Bot a command line node app that takes in parameter and gives you back data.  The liri bot data has to be requested through APIs. In this assignment: Twitter, Spotify and OMDB APIs are used and the npm init, and package son. Files created keys.js, .env, randon.txt.   This file will be used by the `dotenv` package to set what are known as environment variables to the global `process.env` object in node.  3. `node liri.js movie-this '<movie name here>'` * This will output the following information to your terminal/bash window:  ``` * Title of the movie. * Year the movie came out. * IMDB Rating of the movie. * Rotten Tomatoes Rating of the movie. * Country where the movie was produced. * Language of the movie. * Plot of the movie. * Actors in the movie.  ``` * If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'  4. `node liri.js do-what-it-says`  * Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.  * It should run `spotify-this-song` for \"I Want it That Way,\" as follows the text in `random.txt`.",
+  "main": "keys.js",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "init": "^0.1.2",
+    "jshint": "^2.9.5",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.85.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,11 +25,5 @@
   "bugs": {
     "url": "https://github.com/Nicolecandice/LIRI-Bot/issues"
   },
-  "homepage": "https://github.com/Nicolecandice/LIRI-Bot#readme",
-  "dependencies": {
-    "dotenv": "^5.0.1",
-    "node-spotify-api": "^1.0.7",
-    "request": "^2.85.0",
-    "twitter": "^1.7.1"
-  }
+  "homepage": "https://github.com/Nicolecandice/LIRI-Bot#readme"
 }
